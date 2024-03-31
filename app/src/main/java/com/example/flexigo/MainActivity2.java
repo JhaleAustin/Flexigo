@@ -14,6 +14,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     private TextView textView1,textView2;
 
+    private  ImageView imgView1,imgView2,imgView3;
+
     private ImageView imageView;
 
     @Override
@@ -47,6 +49,14 @@ public class MainActivity2 extends AppCompatActivity {
 
         imageView.setVisibility(View.VISIBLE);
 
+
+
+        imgView1 = findViewById(R.id.imageView6);
+        imgView2 = findViewById(R.id.imageView7);
+        imgView3 = findViewById(R.id.imageView8);
+
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,10 +83,16 @@ public class MainActivity2 extends AppCompatActivity {
 
                 imageView.setVisibility(View.INVISIBLE);
 
+
+                imgView1.setVisibility(View.VISIBLE);
+                imgView2.setVisibility(View.VISIBLE);
+                imgView3.setVisibility(View.VISIBLE);
+
             }
         });
 
 
+        //health status
          button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,10 +100,45 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        //physical assesment
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, PhysicalFitness.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        //beginner
+        imgView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, beginner.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        //basic
+        imgView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, basic.class);
+                startActivity(intent);
+
+            }
+        });
+
+        //Advance
+        imgView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, beginner.class);
+                startActivity(intent);
 
             }
         });

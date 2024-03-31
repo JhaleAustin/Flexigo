@@ -48,8 +48,8 @@ public class PhysicalFitness extends AppCompatActivity {
             }
         });
 
-        button3 = findViewById(R.id.button13);
-        button3.setOnClickListener(new View.OnClickListener() {
+        button4 = findViewById(R.id.button13);
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
