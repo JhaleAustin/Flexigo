@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Flexigo"
         tools:targetApi="31">
         <activity
+            android:name=".Beginner"
+            android:exported="false"
+            android:label="@string/title_activity_beginner"
+            android:theme="@style/Theme.Flexigo" />
+        <activity
             android:name=".Flexibility"
             android:exported="false" />
         <activity
