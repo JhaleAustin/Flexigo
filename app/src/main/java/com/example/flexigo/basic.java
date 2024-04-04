@@ -33,7 +33,7 @@ public class basic extends AppCompatActivity {
             public void onClick(View v) {
                 button.setVisibility(View.INVISIBLE);
                 button2.setVisibility(View.VISIBLE);
-                imgView1.setImageResource(R.drawable._1);
+                imgView1.setImageResource(R.drawable._5);
 
 
 
@@ -48,7 +48,7 @@ public class basic extends AppCompatActivity {
                 button2.setVisibility(View.INVISIBLE);
                 button4.setVisibility(View.VISIBLE);
 
-                imgView1.setImageResource(R.drawable._5);
+                imgView1.setImageResource(R.drawable._2);
 
 
 

@@ -34,7 +34,7 @@ public class advanced extends AppCompatActivity {
             public void onClick(View v) {
                 button.setVisibility(View.INVISIBLE);
                 button2.setVisibility(View.VISIBLE);
-                imgView1.setImageResource(R.drawable._1);
+                imgView1.setImageResource(R.drawable._6);
 
 
 
@@ -49,7 +49,7 @@ public class advanced extends AppCompatActivity {
                 button2.setVisibility(View.INVISIBLE);
                 button4.setVisibility(View.VISIBLE);
 
-                imgView1.setImageResource(R.drawable._6);
+                imgView1.setImageResource(R.drawable._2);
 
 
 
@@ -63,6 +63,7 @@ public class advanced extends AppCompatActivity {
                 imgView1.setImageResource(R.drawable._4);
                 webView.setVisibility(View.INVISIBLE);
                 button4.setVisibility(View.INVISIBLE);
+                button3.setVisibility(View.INVISIBLE);
 
             }
         });

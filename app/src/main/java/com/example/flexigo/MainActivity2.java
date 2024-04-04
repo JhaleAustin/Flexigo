@@ -37,6 +37,13 @@ public class MainActivity2 extends AppCompatActivity {
         imageView= findViewById(R.id.imageView2);
 
 
+        button5= findViewById(R.id.button18);
+
+        button6= findViewById(R.id.button22);
+
+        button5= findViewById(R.id.button8);
+        button6 = findViewById(R.id.button9);
+
 
         button.setVisibility(View.VISIBLE);
 
@@ -139,6 +146,24 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity2.this, advanced.class);
+                startActivity(intent);
+
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, profile.class);
+                startActivity(intent);
+
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, Notifications.class);
                 startActivity(intent);
 
             }

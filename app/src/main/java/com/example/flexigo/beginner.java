@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class beginner extends AppCompatActivity {
 
@@ -65,6 +64,7 @@ public class beginner extends AppCompatActivity {
                 imgView1.setImageResource(R.drawable._4);
                 webView.setVisibility(View.INVISIBLE);
                 button4.setVisibility(View.INVISIBLE);
+                button3.setVisibility(View.INVISIBLE);
 
             }
         });
