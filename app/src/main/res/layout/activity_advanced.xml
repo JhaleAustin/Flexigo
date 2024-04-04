@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".beginner">
+    tools:context=".advanced">
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4"
-        app:srcCompat="@drawable/_0" />
+        app:srcCompat="@drawable/_3" />
 
     <Button
         android:id="@+id/button17"
@@ -66,9 +66,9 @@
         android:layout_width="186dp"
         android:layout_height="63dp"
         android:background="#00FFFFFF"
-        android:visibility="invisible"
-
         android:text="PROCEED NEXT"
+
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -79,10 +79,10 @@
     <WebView
         android:id="@+id/webView"
         android:layout_width="361dp"
-        android:visibility="invisible"
-
         android:layout_height="189dp"
+
         android:layout_marginBottom="84dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/button20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

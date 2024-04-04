@@ -49,6 +49,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         imageView.setVisibility(View.VISIBLE);
 
+        button2.setVisibility(View.VISIBLE);
 
 
         imgView1 = findViewById(R.id.imageView6);
@@ -137,7 +138,7 @@ public class MainActivity2 extends AppCompatActivity {
         imgView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, beginner.class);
+                Intent intent = new Intent(MainActivity2.this, advanced.class);
                 startActivity(intent);
 
             }

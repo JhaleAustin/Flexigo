@@ -3,24 +3,22 @@ package com.example.flexigo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class beginner extends AppCompatActivity {
-
+public class advanced extends AppCompatActivity {
     private Button button,button2,button3,button4,button5,button6;
     private ImageView imgView1,imgView2,imgView3;
     private WebView webView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beginner);
+        setContentView(R.layout.activity_advanced);
 
         button = findViewById(R.id.button17);
         button2 = findViewById(R.id.button19);
@@ -51,7 +49,7 @@ public class beginner extends AppCompatActivity {
                 button2.setVisibility(View.INVISIBLE);
                 button4.setVisibility(View.VISIBLE);
 
-                imgView1.setImageResource(R.drawable._2);
+                imgView1.setImageResource(R.drawable._6);
 
 
 

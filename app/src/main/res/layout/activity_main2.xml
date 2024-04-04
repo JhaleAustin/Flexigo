@@ -120,6 +120,8 @@ UBBC - SHS
         android:id="@+id/imageView6"
         android:layout_width="361dp"
         android:layout_height="157dp"
+
+        android:visibility="invisible"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,6 +132,7 @@ UBBC - SHS
         android:id="@+id/imageView7"
         android:layout_width="373dp"
         android:layout_height="143dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,6 +143,8 @@ UBBC - SHS
         android:id="@+id/imageView8"
         android:layout_width="367dp"
         android:layout_height="110dp"
+
+        android:visibility="invisible"
         android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.342"
