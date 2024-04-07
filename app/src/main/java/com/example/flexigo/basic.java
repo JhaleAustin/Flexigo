@@ -3,6 +3,7 @@ package com.example.flexigo;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 public class basic extends AppCompatActivity {
-    private Button button,button2,button3,button4,button5,button6;
+    private Button button,button2,button3,button4,button5,button6,button7;
     private ImageView imgView1,imgView2,imgView3;
     private WebView webView;
     @Override
@@ -22,6 +23,7 @@ public class basic extends AppCompatActivity {
         button = findViewById(R.id.button17);
         button2 = findViewById(R.id.button19);
         button3= findViewById(R.id.button20);
+        button7= findViewById(R.id.button25);
 
         button4 =  findViewById(R.id.button21);
         imgView1= findViewById(R.id.imageView);
@@ -58,6 +60,7 @@ public class basic extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                button7.setVisibility(View.VISIBLE);
                 imgView1.setVisibility(View.VISIBLE);
                 imgView1.setImageResource(R.drawable._4);
                 webView.setVisibility(View.INVISIBLE);
@@ -87,6 +90,17 @@ public class basic extends AppCompatActivity {
                 String youtubeUrl = "https://www.youtube.com/embed/f3zOrYCwquE?si=aXQojxUR9zx2Wdw_";
                 webView.loadUrl(youtubeUrl);
                 imgView1.setImageResource(R.drawable._4);
+
+            }
+        });
+
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(basic.this, spin_wheel.class);
+                startActivity(intent);
+
 
             }
         });

@@ -2,6 +2,7 @@ package com.example.flexigo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -12,7 +13,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class advanced extends AppCompatActivity {
-    private Button button,button2,button3,button4,button5,button6;
+    private Button button,button2,button3,button4,button5,button6,button7;
     private ImageView imgView1,imgView2,imgView3;
     private WebView webView;
     @Override
@@ -23,6 +24,7 @@ public class advanced extends AppCompatActivity {
         button = findViewById(R.id.button17);
         button2 = findViewById(R.id.button19);
         button3= findViewById(R.id.button20);
+        button7= findViewById(R.id.button23);
 
         button4 =  findViewById(R.id.button21);
         imgView1= findViewById(R.id.imageView);
@@ -64,6 +66,7 @@ public class advanced extends AppCompatActivity {
                 webView.setVisibility(View.INVISIBLE);
                 button4.setVisibility(View.INVISIBLE);
                 button3.setVisibility(View.INVISIBLE);
+                button7.setVisibility(View.VISIBLE);
 
             }
         });
@@ -89,6 +92,18 @@ public class advanced extends AppCompatActivity {
                 String youtubeUrl = "https://www.youtube.com/embed/f3zOrYCwquE?si=aXQojxUR9zx2Wdw_";
                 webView.loadUrl(youtubeUrl);
                 imgView1.setImageResource(R.drawable._4);
+
+            }
+        });
+
+
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(advanced.this, spin_wheel.class);
+                startActivity(intent);
+
 
             }
         });

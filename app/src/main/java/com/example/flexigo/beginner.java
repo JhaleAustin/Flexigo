@@ -2,6 +2,7 @@ package com.example.flexigo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +13,7 @@ import android.webkit.WebViewClient;
 
 public class beginner extends AppCompatActivity {
 
-    private Button button,button2,button3,button4,button5,button6;
+    private Button button,button2,button3,button4,button5,button6,button7;
     private ImageView imgView1,imgView2,imgView3;
     private WebView webView;
 
@@ -26,6 +27,7 @@ public class beginner extends AppCompatActivity {
         button3= findViewById(R.id.button20);
 
         button4 =  findViewById(R.id.button21);
+        button7 =  findViewById(R.id.button24);
         imgView1= findViewById(R.id.imageView);
         button.setVisibility(View.VISIBLE);
 
@@ -60,6 +62,8 @@ public class beginner extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                button7.setVisibility(View.VISIBLE);
+
                 imgView1.setVisibility(View.VISIBLE);
                 imgView1.setImageResource(R.drawable._4);
                 webView.setVisibility(View.INVISIBLE);
@@ -93,5 +97,17 @@ public class beginner extends AppCompatActivity {
 
             }
         });
+
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(beginner.this, spin_wheel.class);
+                startActivity(intent);
+
+
+            }
+        });
+
     }
 }

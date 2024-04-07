@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
-    private Button button,button2,button3,button4,button5,button6;
+    private Button button,button2,button3,button4,button5,button6,button7;
 
     private TextView textView1,textView2;
 
@@ -39,7 +39,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         button5= findViewById(R.id.button18);
 
-        button6= findViewById(R.id.button22);
+        button7= findViewById(R.id.button22);
 
         button5= findViewById(R.id.button8);
         button6 = findViewById(R.id.button9);
@@ -108,16 +108,7 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        //physical assesment
 
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, PhysicalFitness.class);
-                startActivity(intent);
-
-            }
-        });
 
 
         //beginner
@@ -151,19 +142,41 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        button5.setOnClickListener(new View.OnClickListener() {
+
+
+        button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, profile.class);
+                Intent intent = new Intent(MainActivity2.this, Tutorial.class);
                 startActivity(intent);
 
             }
         });
 
-        button6.setOnClickListener(new View.OnClickListener() {
+
+        button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity2.this, Notifications.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, PhysicalFitness.class);
+                startActivity(intent);
+
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, profile.class);
                 startActivity(intent);
 
             }
