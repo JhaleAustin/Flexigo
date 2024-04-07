@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +10,6 @@
         android:id="@+id/wheelImageView"
         android:layout_width="wrap_content"
         android:layout_height="397dp"
-        android:layout_centerInParent="true"
         android:contentDescription="@string/app_name"
         android:onClick="spinWheel"
         android:src="@drawable/easy"
@@ -23,5 +23,24 @@
         android:layout_centerHorizontal="true"
         android:onClick="spinWheel"
         android:text="Spin" />
+
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:layout_below="@+id/countdownTextView"
+        android:layout_marginTop="31dp"
+        app:srcCompat="@drawable/image__10_" />
 
 </RelativeLayout>

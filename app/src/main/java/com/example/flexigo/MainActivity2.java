@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
-    private Button button,button2,button3,button4,button5,button6,button7;
+    private Button button,button2,button3,button4,button5,button6,button7,button8;
 
     private TextView textView1,textView2;
 
@@ -41,7 +41,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         button7= findViewById(R.id.button22);
 
-        button5= findViewById(R.id.button8);
+        button8= findViewById(R.id.button8);
         button6 = findViewById(R.id.button9);
 
 

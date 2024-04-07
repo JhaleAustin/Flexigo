@@ -103,6 +103,8 @@ public class beginner extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(beginner.this, spin_wheel.class);
+                String myString = "beginner"; // Replace "Your String Here" with your desired string
+                intent.putExtra("STRING_KEY", myString); // "STRING_KEY" is a key to retrieve the string in the spin_wheel activity
                 startActivity(intent);
 
 
