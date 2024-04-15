@@ -216,7 +216,7 @@ public class spin_wheel extends AppCompatActivity {
     private void setAdvanceImage2() {
         Random random = new Random();
         int index = random.nextInt(advance2.length);
-        ImageView.setImageResource(advance1[index]);
+        ImageView.setImageResource(advance2[index]);
         ImageView.setVisibility(View.VISIBLE);
     }
 
@@ -224,7 +224,7 @@ public class spin_wheel extends AppCompatActivity {
     private void setBasicImage2() {
         Random random = new Random();
         int index = random.nextInt(basic2.length);
-        ImageView.setImageResource(basic1[index]);
+        ImageView.setImageResource(basic2[index]);
         ImageView.setVisibility(View.VISIBLE);
     }
 
@@ -232,7 +232,7 @@ public class spin_wheel extends AppCompatActivity {
     private void setBeginnerImage2() {
         Random random = new Random();
         int index = random.nextInt(beginner2.length);
-        ImageView.setImageResource(beginner1[index]);
+        ImageView.setImageResource(beginner2[index]);
         ImageView.setVisibility(View.VISIBLE);
     }
 
@@ -241,7 +241,7 @@ public class spin_wheel extends AppCompatActivity {
     private void setAdvanceImage3() {
         Random random = new Random();
         int index = random.nextInt(advance3.length);
-        ImageView.setImageResource(advance1[index]);
+        ImageView.setImageResource(advance3[index]);
         ImageView.setVisibility(View.VISIBLE);
     }
 
@@ -249,7 +249,7 @@ public class spin_wheel extends AppCompatActivity {
     private void setBasicImage3() {
         Random random = new Random();
         int index = random.nextInt(basic3.length);
-        ImageView.setImageResource(basic1[index]);
+        ImageView.setImageResource(basic3[index]);
         ImageView.setVisibility(View.VISIBLE);
     }
 
@@ -257,7 +257,7 @@ public class spin_wheel extends AppCompatActivity {
     private void setBeginnerImage3() {
         Random random = new Random();
         int index = random.nextInt(beginner3.length);
-        ImageView.setImageResource(beginner1[index]);
+        ImageView.setImageResource(beginner3[index]);
         ImageView.setVisibility(View.VISIBLE);
     }
     @Override
